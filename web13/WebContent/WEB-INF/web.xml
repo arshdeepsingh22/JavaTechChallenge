@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>web13</display-name>
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>arsh.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>CreateSubsServlet</servlet-name>
+        <servlet-class>arsh.controller.CreateSubsServlet</servlet-class>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSubsServlet</servlet-name>
+        <url-pattern>/Create</url-pattern>
+    </servlet-mapping>
+	<context-param>
+        <param-name>dbUser</param-name>
+        <param-value>sql6159701</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>BZk6dFt2zH</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbURL</param-name>
+        
+        <param-value>jdbc:mysql://sql6.freemysqlhosting.net/sql6159701</param-value>
+        
+    </context-param>
+
+    <listener>
+        <listener-class>
+            arsh.listners.AppContextListener
+        </listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>CancelSubsServlet</servlet-name>
+        <servlet-class>arsh.controller.CancelSubsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelSubsServlet</servlet-name>
+        <url-pattern>/Cancel</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>BeerSelectServlet</servlet-name>
+        <servlet-class>arsh.controller.BeerSelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeerSelectServlet</servlet-name>
+        <url-pattern>/SelectBeer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>arsh.controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBServlet</servlet-name>
+        <servlet-class>arsh.controller.DBServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBServlet</servlet-name>
+        <url-pattern>/DbData</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>dbUser</param-name>
+        <param-value>sql6159701</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>BZk6dFt2zH</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbURL</param-name>
+        
+        <param-value>jdbc:mysql://sql6.freemysqlhosting.net/sql6159701</param-value>
+        
+    </context-param>
+
+    <listener>
+        <listener-class>
+            arsh.listners.AppContextListener
+        </listener-class>
+    </listener>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

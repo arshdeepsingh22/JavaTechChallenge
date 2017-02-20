@@ -1,0 +1,24 @@
+package arsh.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class BeerExpert {
+
+    public List getBrands(String color){
+        List brands = new ArrayList();
+        if(color.equalsIgnoreCase("red")){
+            brands.add("red beer 1");
+            brands.add("red beer 2");
+        }else if(color.equalsIgnoreCase("brown")){
+            brands.add("brown beer 1");
+            brands.add("brown beer 2");
+            brands.add("brown beer 3");
+        }else{
+            brands.add("other beer 1");
+            brands.add("other beer 2");
+        }
+        return brands;
+    }
+}

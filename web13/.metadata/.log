@@ -1,0 +1,109 @@
+!SESSION 2017-02-02 14:50:27.489 -----------------------------------------------
+eclipse.buildId=3.8.2.201610040743-RELEASE-e46
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-02 14:51:03.518
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-02 14:51:06.383
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-02 14:51:06.386
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2017-02-02 14:56:10.145
+!MESSAGE Updating the index from remote ‘https://www.eclipse.org/downloads/download.php?r=1&file=/technology/epp/logging/problems.zip’ failed with exception: org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.NIOFSDirectory@/private/var/folders/7p/p4p3nn89601_w45g_y6gxvww0000gn/T/1486027570137-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@6dc1aa76: files: [] ; version: 2.0.3.v20160905-1331
+!STACK 0
+org.eclipse.epp.logging.aeri.core.util.Logs$LogTraceException
+	at org.eclipse.epp.logging.aeri.core.util.Logs$LogTraceException.newTrace(Logs.java:387)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:319)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-02-20 05:40:50.212 -----------------------------------------------
+eclipse.buildId=3.8.2.201610040743-RELEASE-e46
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-20 05:41:17.623
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2017-02-20 05:53:42.881 -----------------------------------------------
+eclipse.buildId=3.8.2.201610040743-RELEASE-e46
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-20 05:53:56.806
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2017-02-20 05:59:19.283 -----------------------------------------------
+eclipse.buildId=3.8.2.201610040743-RELEASE-e46
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/22arsh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-20 05:59:43.635
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-02-20 06:00:00.902
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-02-20 06:00:00.903
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-02-20 06:00:00.919
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.jobs".
+!STACK 0
+java.lang.IllegalStateException: Job manager has been shut down.
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1240)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:382)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:668)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.feeds.FeedMonitor$4.done(FeedMonitor.java:126)
+	at org.eclipse.core.internal.jobs.JobListeners$3.notify(JobListeners.java:42)
+	at org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:144)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:694)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:72)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-02-20 06:00:00.921
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.jobs".
+!STACK 0
+java.lang.IllegalStateException: Job manager has been shut down.
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1240)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:382)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:668)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.feeds.FeedMonitor$5.done(FeedMonitor.java:153)
+	at org.eclipse.core.internal.jobs.JobListeners$3.notify(JobListeners.java:42)
+	at org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:144)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:694)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:72)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-02-20 06:00:00.921
+!MESSAGE An internal error occurred during: "Downloading RSS feeds".
+!STACK 0
+java.lang.NullPointerException
+	at org.springsource.ide.eclipse.dashboard.internal.ui.util.IdeUiUtils.getVersion(IdeUiUtils.java:260)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob.updateNotifications(AggregateFeedJob.java:231)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob.run(AggregateFeedJob.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-02-20 06:00:00.921
+!MESSAGE An internal error occurred during: "Downloading RSS feeds".
+!STACK 0
+java.lang.NullPointerException
+	at org.springsource.ide.eclipse.dashboard.internal.ui.util.IdeUiUtils.getVersion(IdeUiUtils.java:260)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob.updateNotifications(AggregateFeedJob.java:231)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob.run(AggregateFeedJob.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
